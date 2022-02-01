@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 1
+      In AppGallery
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,9 +9,19 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
+      <ion-title size="large">In AppGallery</ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+
+  
+
+  <ion-item color="pistage" style="margin-top: 5px;margin-bottom: 10px;opacity: 0.9;">
+    <ion-label position="stacked">Package name</ion-label>
+    <ion-input autocomplete="off" type="text" name="Package name"  [(ngModel)]="pkg"></ion-input>
+  </ion-item>
+
+  <ion-button  expand="block" color="dark" fill="outline" (click)="openInAppGallery()">Find</ion-button>
+
+
 </ion-content>

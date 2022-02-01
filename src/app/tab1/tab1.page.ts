@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { InAppBrowser } from '@awesome-cordova-plugins/in-app-browser/ngx';
 @Component({
   selector: 'app-tab1',
   templateUrl: 'tab1.page.html',
@@ -7,6 +7,12 @@ import { Component } from '@angular/core';
 })
 export class Tab1Page {
 
-  constructor() {}
+  constructor(private iab: InAppBrowser) {}
+  pkg: any;
+  
+  openInAppGallery(){
+   // this.iab.create
+   window.open( "market://details?id=" + this.pkg, '_blank');
+  }
 
 }

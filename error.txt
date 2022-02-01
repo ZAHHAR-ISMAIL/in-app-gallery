@@ -1,0 +1,59 @@
+2021-12-24 11:26:35.487 1958-2235/? E/InputDispatcher: channel 'af052a1 ma.snrt.live/ma.snrt.live.activities.EBPlayerActivity (server)' 
+~ Channel is unrecoverably broken and will be disposed!
+
+E/OMXNodeInstance: !!! Observer died. Quickly, do something, ... anything...
+
+
+2021-12-24 11:26:36.390 15576-15576/ma.snrt.live E/libc: Access denied finding property "ro.vendor.df.effect.conflict"
+
+
+
+
+_____________
+
+
+2021-12-24 11:36:13.405 1958-2235/? E/InputDispatcher: channel 'edc5ae5 ma.snrt.live/ma.snrt.live.activities.EBPlayerActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+2021-12-24 11:36:13.410 1107-10436/? E/OMXNodeInstance: !!! Observer died. Quickly, do something, ... anything...
+2021-12-24 11:36:13.411 1107-11831/? E/OMXNodeInstance: !!! Observer died. Quickly, do something, ... anything...
+2021-12-24 11:36:13.423 1958-2235/? E/InputDispatcher: channel 'ecfce66 ma.snrt.live/ma.snrt.live.activities.MainActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+2021-12-24 11:36:13.433 1958-5043/? E/InputDispatcher: Window handle Window{edc5ae5 u0 ma.snrt.live/ma.snrt.live.activities.EBPlayerActivity} has no registered input channel
+2021-12-24 11:36:13.451 1958-2851/? E/ActivityTaskManager: Failed to schedule configuration change
+    android.os.DeadObjectException
+        at android.os.BinderProxy.transactNative(Native Method)
+        at android.os.BinderProxy.transact(BinderProxy.java:511)
+        at android.app.IApplicationThread$Stub$Proxy.scheduleTransaction(IApplicationThread.java:2463)
+        at android.app.servertransaction.ClientTransaction.schedule(ClientTransaction.java:135)
+        at com.android.server.wm.ClientLifecycleManager.scheduleTransaction(ClientLifecycleManager.java:47)
+        at com.android.server.wm.ClientLifecycleManager.scheduleTransaction(ClientLifecycleManager.java:100)
+        at com.android.server.wm.WindowProcessController.updateConfiguration(WindowProcessController.java:969)
+        at com.android.server.wm.WindowProcessController.onConfigurationChanged(WindowProcessController.java:944)
+        at com.android.server.wm.ActivityTaskManagerService.updateGlobalConfigurationLocked(ActivityTaskManagerService.java:5410)
+        at com.android.server.wm.ActivityTaskManagerService.updateDisplayOverrideConfigurationLocked(ActivityTaskManagerService.java:5454)
+        at com.android.server.wm.ActivityTaskManagerService.updateDisplayOverrideConfigurationLocked(ActivityTaskManagerService.java:5431)
+        at com.android.server.wm.DisplayContent.onDescendantOrientationChanged(DisplayContent.java:1391)
+        at com.android.server.wm.WindowContainer.onDescendantOrientationChanged(WindowContainer.java:737)
+        at com.android.server.wm.WindowContainer.onDescendantOrientationChanged(WindowContainer.java:737)
+        at com.android.server.wm.WindowContainer.onDescendantOrientationChanged(WindowContainer.java:737)
+        at com.android.server.wm.Task.onDescendantOrientationChanged(Task.java:350)
+        at com.android.server.wm.WindowContainer.onDescendantOrientationChanged(WindowContainer.java:737)
+        at com.android.server.wm.AppWindowToken.reportDescendantOrientationChangeIfNeeded(AppWindowToken.java:826)
+        at com.android.server.wm.AppWindowToken.setVisibility(AppWindowToken.java:652)
+        at com.android.server.wm.ActivityRecord.setVisibility(ActivityRecord.java:1990)
+        at com.android.server.wm.ActivityStack.resumeTopActivityInnerLocked(ActivityStack.java:3089)
+        at com.android.server.wm.ActivityStack.resumeTopActivityUncheckedLocked(ActivityStack.java:2701)
+        at com.android.server.wm.RootActivityContainer.resumeFocusedStacksTopActivities(RootActivityContainer.java:1171)
+        at com.android.server.wm.ActivityStack.completePauseLocked(ActivityStack.java:1930)
+        at com.android.server.wm.ActivityStack.activityPausedLocked(ActivityStack.java:1855)
+        at com.android.server.wm.ActivityTaskManagerService.activityPaused(ActivityTaskManagerService.java:1746)
+        at android.app.IActivityTaskManager$Stub.onTransact(IActivityTaskManager.java:2029)
+        at android.os.Binder.execTransactInternal(Binder.java:1021)
+        at android.os.Binder.execTransact(Binder.java:994)
+2021-12-24 11:36:13.758 17213-17213/? E/hwid.persisten: Not starting debugger since process cannot load the jdwp agent.
+2021-12-24 11:36:13.831 17236-17236/? E/ma.snrt.live: Unknown bits set in runtime_flags: 0x8000
+2021-12-24 11:36:13.933 17213-17213/? E/breaker_buildex: An exception occurred while reading SystemProperties: ro.product.model
+2021-12-24 11:36:14.063 17213-17213/? E/breaker_buildex: An exception occurred while reading SystemProperties: ro.product.model
+2021-12-24 11:36:14.292 17213-17213/? E/libc: Access denied finding property "ro.vendor.df.effect.conflict"
+2021-12-24 11:36:14.315 17236-17236/ma.snrt.live E/libc: Access denied finding property "ro.vendor.df.effect.conflict"
+2021-12-24 11:36:14.325 17213-17213/? E/HiAdKit.SystemUtil:  check available error:com.huawei.android.app.IHwActivityNotifierEx
+2021-12-24 11:36:14.367 17213-17320/? E/fwkit_RC_Parser: [E/fwkit/fwkit_RC_Parser 17213:21909 RemoteConfigParser.java:489] parseListFromConfig is blank
+2021-12-24 11:36:14.521 17236-17354/ma.snrt.live E/GmsClient: unable to connect to service: com.google.android.gms.leibniz.events.service.START on com.google.android.gms
